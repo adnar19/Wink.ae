@@ -1,0 +1,144 @@
+.js-show-cookie-banner .cookie-compliance {
+    transform: translateY(0);
+  }
+  
+  .cookie-compliance {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 10000;
+    transition: all 0.3s ease;
+    transform: translateY(100%);
+  }
+  .cookie-compliance__container {
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 24px 16px 24px 48px;
+  }
+  .cookie-compliance__title {
+    font-family: "Gotham";
+    font-weight: 700;
+    font-size: 18px;
+    color: #202020;
+    margin: 0 0 16px;
+    line-height: 1.7;
+    position: relative;
+  }
+  .cookie-compliance__title::before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 0;
+    left: -48px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAAmVBMVEUAAADMzP8rqtXV1dXb29vMzObY2NjJ19fOztvF0dzI09PMzNbK09PJ0djL0tLFztbGztLHz9PIzNTGztXIzNPHztXGzNLFzNTGzdTFzNPGzNMen9LGzdLGzNLGzNLGzdPFzNPFzdLFzNPFzdPFzdLGzNPFzdPFzNLGzdPGzdPGzdIfn9LGzNPGzNLGzdPFzNLGzdMentHFzNIhoExGAAAAMXRSTlMABQYGBwoNExUWFxkdISI+P0BBQ0ZJVWpwc3mImaCms7rCw8bHydDU2tvf5uzw+fv9rZoqVgAAAfpJREFUeNqll+eWgjAQhce2VhQFRURB7AXL+v4Pt0w8riuXLOTM/cFRyCdxeihfDXe22JyS6zU5bRYzt0Gl1Z7G18eHrvG0XQodRLdHjm7RoBAdrR5arYb/ot3wtfAw9xyrWas1LcebH153w66eHV8eSju/Rx/q+bvnk8tYx/p3tWCbu7vhVj28+7lofaGeHiek0eSoFizqBGqtlU39CmlV8ZUf1i14r2KTUYEvEkVn3632vO9Tgfp7tfOMrfje8osK9bXklf6Hj+78XmCrwfkcVDP0nm3+x2Nd9m+Cew6+UwXZnSfs73e0hGznEYHODJ/Bamzz8Pcb/A2A0UCvSFpxbLz9C9sGfx85S0jJ5h96xxUaDDRhwiZWxPFMRuI4j/hD56b+gZGGbGGuLVPOQTIUZ+iUiOK3qUFsMHoKDR4TNbjW9UzhHlfFBrlcc8gUJq5MLs3S69wcnqfYTOWiZw57KjM36dUxh50U29ApvVrmsJViJ+IEa5rDTU5iYk/VzOEa+0oEi7YtMpjIVaIgEYWnKDFEKSkpBliGENaXISyACOsLIJZehPWllwZY9BHGoj+AdlMAQ7uBRgdwfqODFlsEY4vF5o4wNncYKwpgHCtwoEEYBxrJKCUa4iTjo2RwFYzM4mFdfkxADU0OKChbdzSyqYw6ZQ9louPgD9/HpYvDrYB2AAAAAElFTkSuQmCC);
+    background-size: 28px auto;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+  }
+  .cookie-compliance__copy {
+    font-family: "Whitney";
+    font-weight: 500;
+    font-size: 16px;
+    color: #71777B;
+    line-height: 1.3;
+  }
+  .cookie-compliance__copy a {
+    color: #129FD0;
+    text-decoration: underline;
+  }
+  .cookie-compliance__form {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 0;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .cookie-compliance__form-item {
+    margin-right: 24px;
+  }
+  .cookie-compliance__form-item:last-of-type {
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .cookie-compliance__label {
+    font-family: "Whitney";
+    font-weight: 500;
+    font-size: 16px;
+    color: #71777B;
+    line-height: 1.3;
+    padding-left: 20px;
+  }
+  .cookie-compliance__checkbox {
+    display: none;
+  }
+  .cookie-compliance__checkbox + label {
+    cursor: pointer;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAAGFBMVEUAAAB1eoByeHtyeHtyeHtxd3txd3txd3v4WLjPAAAAB3RSTlMAMlVX7vz9Yobm5AAAAGBJREFUeNrF0kEKADEIA0CrVf//491CIWAg13rSDoiUmNlyo/JlR3bGlMi9jnRnTOn+zbNhkE6/DQwPaIeIQawgg0yDTKuCTLtCVkeKhEkv1Gfw8Szv/loEQMRGhE1E9ANTJgYRTn8NWQAAAABJRU5ErkJggg==);
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-size: 11px auto;
+  }
+  .cookie-compliance__checkbox + label:hover {
+    opacity: 0.9;
+  }
+  .cookie-compliance__checkbox:checked + label {
+    color: #1E9ED1;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAcCAMAAAA+9+1qAAAAbFBMVEUAAAD///9Vqv8gn98gn98np9ghpdYiodckoNUiotMfntMhn9MgntMgn9QfntIeoNMfntMgn9EfntMfn9MeoNEfoNEfn9Een9Ien9Ien9Ifn9EfntEentEentIfntIfntEen9EentIen9IentGwLPnmAAAAI3RSTlMAAQMIEBofJis0OkVXWGxudICEhYaLnLDC0t/q6/P4+vz9/jSjb5IAAAClSURBVHjardHLDoJgDIRR5eIvAiKCXEWQef93JI0xTdEMLuxycpIuvt0/7vCDiR+XTRMNwG3PjbsDmE/UhB0AZNQErZgrNX4jpqLGq8XUHkWVmManphTTBtRkYrqQmnQG0DuzHdcxRgBDZLZ8Sj5iYIytAYxyvcRI7a8JojZiJC9lYhSWqOIxVGkMojQGUcU7BlFPjUGUxqBKYnClMZjSGESdv+8LII0XqARl4XcAAAAASUVORK5CYII=);
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-size: 15px auto;
+  }
+  .cookie-compliance__checkbox:checked:disabled + label {
+    color: #C9CED2;
+    cursor: default;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAcCAMAAAA+9+1qAAAAbFBMVEUAAAD////////f39/P39/O2NjO1tbQ19fQ1dXO09jK09fL09bK09bL1NbL0tfM09XK09XL09XL09bL09fM09XM09fL09bL0tbK0tbL0tbK0tbL0tbL09bL09XL09bL0tXK0tbL09bL09bK0tXtHbsVAAAAI3RSTlMAAQMIEBofJis0OkVXWGxudICEhYaLnLDC0t/q6/P4+vz9/jSjb5IAAAClSURBVHjardHLDoJgDIRR5eIvAiKCXEWQef93JI0xTdEMLuxycpIuvt0/7vCDiR+XTRMNwG3PjbsDmE/UhB0AZNQErZgrNX4jpqLGq8XUHkWVmManphTTBtRkYrqQmnQG0DuzHdcxRgBDZLZ8Sj5iYIytAYxyvcRI7a8JojZiJC9lYhSWqOIxVGkMojQGUcU7BlFPjUGUxqBKYnClMZjSGESdv+8LII0XqARl4XcAAAAASUVORK5CYII=);
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-size: 15px auto;
+  }
+  .cookie-compliance__submit {
+    min-width: 140px;
+    border-radius: 2px;
+    background: #1E9ED1;
+    color: #fff;
+    text-align: center;
+    border: none;
+    box-shadow: none;
+    font-family: "Whitney";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.3;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .cookie-compliance__submit:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  .cookie-compliance__submit:hover {
+    background: #0E78A6;
+  }
+  .cookie-compliance__close {
+    position: absolute;
+    top: 24px;
+    right: 16px;
+    cursor: pointer;
+    width: 11px;
+    height: 11px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAAGFBMVEUAAAB1eoByeHtyeHtyeHtxd3txd3txd3v4WLjPAAAAB3RSTlMAMlVX7vz9Yobm5AAAAGBJREFUeNrF0kEKADEIA0CrVf//491CIWAg13rSDoiUmNlyo/JlR3bGlMi9jnRnTOn+zbNhkE6/DQwPaIeIQawgg0yDTKuCTLtCVkeKhEkv1Gfw8Szv/loEQMRGhE1E9ANTJgYRTn8NWQAAAABJRU5ErkJggg==);
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-size: 11px auto;
+    overflow: hidden;
+    text-indent: -999em;
+  }
+  .cookie-compliance__close:hover {
+    opacity: 0.9;
+  }
